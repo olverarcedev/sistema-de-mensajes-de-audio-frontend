@@ -3,7 +3,7 @@ import CounterComponent from "./components/counter.component";
 export default function Home() {
   return (
     <div>
-      <div>Agrega un barco</div>
+      <h1>Agrega un barco</h1>
       <CounterComponent />
     </div>
   );
