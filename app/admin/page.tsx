@@ -1,3 +1,3 @@
 export default function admin() {
-  return <div>Administración</div>;
+  return <div className="p-3">Administración</div>;
 }

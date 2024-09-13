@@ -23,7 +23,7 @@ export default function RootLayout({
           <div className="flex flex-col min-h-screen">
             <HeaderComponent />
             <main className="flex-grow">{children}</main>
-            <footer className="bg-gray-800 text-white py-4">
+            <footer className="bg-gray-800 text-white p-3">
               <p>footer</p>
             </footer>
           </div>
