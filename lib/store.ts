@@ -1,10 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
 import counterReducer from './features/counter/counterSlice';
+import audioMessagesReducer from './features/audioMessages/audioMessagesSlice';
 
 export const makeStore = () => {
     return configureStore({
         reducer: {
             counter: counterReducer,
+            audioMessages: audioMessagesReducer
         },
     });
 };

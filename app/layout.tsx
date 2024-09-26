@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import "./styles/globals.css";
-import HeaderComponent from "./components/header.component";
 import StoreProvider from "./StoreProvider";
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+config.autoAddCss = false;
 
 export const metadata: Metadata = {
-  title: "ShipApp",
-  description: "Gestión de carga de barcos",
+  title: "Sistema de mensajes de audio",
+  description: "Sistema de mensajes de audio",
   icons: {
     icon: "/favicon.ico",
   },
@@ -19,14 +21,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <StoreProvider count={0}>
-          <div className="flex flex-col min-h-screen">
-            <HeaderComponent />
-            <main className="flex-grow">{children}</main>
-            <footer className="bg-gray-800 text-white p-3">
-              <p>footer</p>
-            </footer>
-          </div>
+        <StoreProvider count={0} audioMessages={[]}>
+          {children}
         </StoreProvider>
       </body>
     </html>

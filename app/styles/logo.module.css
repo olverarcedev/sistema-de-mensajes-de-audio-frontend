@@ -1,0 +1,7 @@
+.logo {
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 6px 6px 0 black;
+}
